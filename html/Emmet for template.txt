@@ -1,0 +1,3 @@
+! was used initially
+
+now html5 for getting template of html

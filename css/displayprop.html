@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display properties</title>
+
+    <style>
+        .top {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* margin: 0px; */
+        }
+
+
+        header {
+            margin: auto;
+            /*after doing all even if we comment this out it doesnt matter becoz we have changed the properties of text  but recommended to keep
+
+
+            /* header is a block element */
+            /* does not get apllied because it is block element so its already auto i.e in same space at both sides put border and check to c once  */
+            border: 3px solid black;
+            /* we can use width instead */
+            /* width can be used only for block elements */
+            width: 1200px;
+            /*after doing all even if we comment this out it doesnt matter becoz we have changed the properties of text but recommended to keep
+
+            /* after using width it comes to center because it now has a width  */
+            text-align: center;
+
+        }
+
+        img {
+            width: 86px;
+            /* now to make img come in middle using auto we need to make it a block
+            so  */
+            display: block;
+            /* now auto makes it to come in middle */
+            margin: auto;
+        }
+
+        h3 {
+            text-align: center;
+            margin: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .box{
+            border: 4px solid black;
+            background-color: blanchedalmond;
+            margin:4px 0px;
+            padding: 23px;
+            display:inline-block; 
+            /* to make it inline as well as to set its width we use inline block  */
+            /* now we can make block elements come in single line by setting its widht  */
+            box-sizing: border-box;
+            width :33%;
+        }
+        .container{
+            /* width: 1200px; */
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <!-- <img src="image.png" alt="medini"> -->
+
+        <!-- img inline element
+        h3 block element -->
+        <img src="https://dynamic.placementindia.com/recruiter_comp_logo/937161_20200911142200.jpg" alt="medini">
+        <h3>This is medini's blog</h3>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">HEADING</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloremque, beatae sunt debitis
+                    minus, animi deleniti maiores consectetur sint, error suscipit dolorem magnam officiis molestias
+                    eius mollitia hic neque vero blanditiis porro quos? Maiores fugiat deserunt eligendi aliquam
+                    reiciendis voluptate molestiae fugit a sapiente.
+                </p>
+            
+        </div>
+
+        <div class="box">
+            <h4 class="heading">HEADING</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloremque, beatae sunt debitis
+                    minus, animi deleniti maiores consectetur sint, error suscipit dolorem magnam officiis molestias
+                    eius mollitia hic neque vero blanditiis porro quos? Maiores fugiat deserunt eligendi aliquam
+                    reiciendis voluptate molestiae fugit a sapiente.
+                </p>
+           
+        </div>
+
+        <div class="box">
+            <h4 class="heading">HEADING</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloremque, beatae sunt debitis
+                    minus, animi deleniti maiores consectetur sint, error suscipit dolorem magnam officiis molestias
+                    eius mollitia hic neque vero blanditiis porro quos? Maiores fugiat deserunt eligendi aliquam
+                    reiciendis voluptate molestiae fugit a sapiente.
+                </p>
+           
+        </div>
+    </div>
+</body>
+
+</html>

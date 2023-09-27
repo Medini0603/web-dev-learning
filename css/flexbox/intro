@@ -1,0 +1,12 @@
+flex box is one dimensional layout method used for laying out items in rows or columns
+css flexbox is a better way to allign items in a container
+flexbox=flexible + box
+
+flex--> container     display:flex;  to make it a flexbox
+    -->items
+
+main axis->horizontal
+cross axis->vertical
+
+main size of items
+cross size of item

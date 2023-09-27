@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-compatible" content="IE=edge">
+            <title> student feedback form </title>
+            <style>
+                h1{
+                text-align:center;}
+                body{
+                background-color:#867070;
+                font-size:2em;
+                }
+                .sub{
+                color:black;
+                font-size:1em;
+                background-color:#E4D0D0;
+                }
+                textarea{
+                    font-size:1em;
+                }
+               
+               
+                .b1{display:inline;
+                background-color:#E4D0D0;
+                }
+               
+                input{
+                    font-size:1em;
+                }
+                select{
+                    font-size:1em;
+                }
+            </style>
+            <meta name="description" content="">
+            <meta name="description" content="width--device-width initial-scale=1">
+        </head>
+       
+        <body>
+            <form action="">
+            <h1>STUDENT FEEDBACK FORM</h1>
+            <div class="b1">
+            <label for ="name">Enter name : </label><br>
+            </div>
+            <input type="text" id="name">
+           
+            <br><br>
+           
+            <div class="b1">
+            <label for ="name">Enter email : </label><br>
+            </div>
+            <input type="email" id="mail">
+            <br><br>
+           
+            <div class="b1">
+            <label for ="name">Enter your semester : </label><br>
+            </div>
+            <input type="number" id="sem">
+            <br><br>
+           
+            <div class="b1">
+            <label for ="name">Choose your branch : </label><br>
+            </div>
+            <select id="branch">
+            <option value="CS">Computer science</option>
+            <option value="CS">Electrical engineering</option>
+            <option value="CS">Mechanical engineering</option>
+            <option value="CS">Civil engineering</option>
+            <option value="CS">Environmental engineering</option>
+            </select>
+            <br><br>
+           
+            <div class="b1">
+            <label for="cbx1">Are you a localite?</label><br>
+            </div>
+            <input type="checkbox" name="type" id="cbx1">
+            <label for="cbx1">Localite</label>
+           
+           
+            <br>
+            <input type="checkbox" name="type" id="cbx1">
+                        <label for="cbx1">Hostellite</label>
+           
+           
+            <br><br>
+           
+            <div class="b1">
+            <label for="elec">Choose your elective</label>
+            </div>
+            <br>
+           
+            <input type="radio" name="PE" id="elec">Cloud computing <br>
+            <input type="radio" name="PE" id="elec">IT cybersecurity <br>
+            <input type="radio" name="PE" id="elec">Automotive cybersecurity <br><br>
+           
+            <div class="b1">
+            <label for ="name">Rating : </label><br>
+            </div>
+            <input type="range" id="rate" min="0" max="10">
+            <br><br>
+           
+            <div class="b1">
+            <label for="feed">ENTER FEEDBACK : </label><br>
+            </div>
+           
+            <textarea id="feed" cols="100" rows="10" placeholder="Enter your feedback here"></textarea>
+            <br><br>
+           
+            <input type="submit" value="SUBMIT" class="sub">
+           
+            <br><br>
+           
+            </form>
+        </body>
+      </html>

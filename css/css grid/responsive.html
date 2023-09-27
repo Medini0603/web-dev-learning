@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive grids</title>
+
+    <style>
+
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+
+        .border-now{
+            border: 2px solid black;
+            padding: 15px 32px;
+            background-color: rgb(66, 147, 147);
+        }
+          @media only screen and (max-width:300px) {
+            body{
+                /* i.e if width is between 0 too 300 then make content of box1 appear on scrren by making it block from none */
+                display: block;
+                background-color: yellow;
+                color: black;
+            }
+            .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+            }
+                /* Just think u dont want to display aside in this width  */
+            aside{
+                display: none;
+            }
+
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body{
+                /* i.e if width is between 300 to 500 then make content of box2 appear on scrren by making it block from none */
+                display: block;
+                background-color: cyan;
+            }
+                .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+            }
+                /* Just think u dont want to display aside in this width  */
+            aside{
+                display: none;
+            }
+
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:500px) and (max-width:900px) {
+            body{
+               
+                display: block;
+                background-color: tomato;
+                color: black;
+            }
+                .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        
+
+            }
+        }
+
+        @media only screen and (min-width:900px)  {
+            body{
+             
+                display: block;
+                background-color: burlywood;
+               
+            }
+        }
+
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+ <div class="container">
+    <nav class="border-now" id="navbar">
+       <span>Home</span>
+       <span>Contact</span>
+       <span>Services</span>
+       <span>About</span>
+    </nav>
+    <section class="border-now" id="section">
+        <h2>
+            Learn CSS in Hindi
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas rerum, enim deleniti, debitis adipisci qui eos, culpa ipsa reiciendis molestiae officia tempore eveniet iusto nesciunt alias. Accusantium totam ullam vitae, a maiores unde similique! Ducimus suscipit maxime quasi id praesentium eaque impedit. Quasi explicabo necessitatibus dolore itaque nobis laudantium esse. Molestias nulla repellendus dolorum recusandae possimus ea, natus nostrum eius assumenda eos, architecto quisquam qui consequatur eligendi minima nisi minus consectetur provident aut. Fugit accusantium explicabo iusto magnam soluta eveniet, sed, dolore repudiandae molestias accusamus voluptatibus recusandae dolorem minima? Porro laudantium ipsum iure magnam, natus numquam molestias ipsa cupiditate quam. Eveniet totam recusandae sequi, exercitationem nesciunt provident beatae fuga quasi illum corporis quam maxime molestiae eaque ipsam nisi necessitatibus quibusdam saepe, ad rem magnam. Quod officia unde omnis, consequuntur aliquid expedita harum ipsam. Voluptates eveniet ex repellat consectetur explicabo, pariatur eius facere, odit suscipit ut odio obcaecati, sit voluptatem veritatis totam minima dolorum. Earum quibusdam magnam quis minus sapiente. Nihil nobis fuga iure voluptate mollitia recusandae tempore numquam eligendi voluptas!
+        </p>
+    </section>
+
+    <aside class="border-now" id="aside">
+        <h1>More about us</h1>
+    </aside>
+
+    <footer class="border-now" id="footer">
+        copyright medini
+    </footer>
+ </div>
+</body>
+</html>

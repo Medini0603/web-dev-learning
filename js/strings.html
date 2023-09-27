@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Heading brooo</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aperiam vel dolorem eaque labore inventore laudantium totam consectetur libero similique exercitationem doloremque a sint debitis, quae aspernatur, sunt nemo tempore nobis recusandae placeat sapiente adipisci!
+        </p>
+    </div>
+
+    <script>
+        var string="This"
+        var name='Medini'
+        var channel='Codewith medini'
+        var message='Medini is a "good girl".'
+// if we want to print "" then use ''for string and vice versa 
+        console.log(string+name+message);
+// template literal in js 
+
+// to use both " " and ' ' in a line use ``  (below esc at left)
+        temp=`${name} is a 'nice' person and she has a "channel" ${channel}`;
+        console.log(temp);
+
+        var len=name.length;
+        console.log(len);
+        console.log("Length of name is"+len);
+        console.log(`Length is ${len}`);
+// escape characters 
+        console.log("Hello\\n world\nharry\tbhai\bhibro");
+
+//strings using constructors
+        var y=new String("Hello");
+        console.log(y);
+
+        document.getElementById('content').innerHTML = '<h3>This is h3 heading induced dynamically by javascript into division with id="content"</h3>'
+    </script>
+</body>
+</html>

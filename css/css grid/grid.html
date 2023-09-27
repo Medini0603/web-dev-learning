@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+        .container{
+            display: grid;
+
+            /* This gives 3 columns one of width 280px other two of width 80 each  */
+            grid-template-columns: 280px 80px 80px;
+            grid-template-columns: 280px 80px auto;
+            /* grid-template-columns: 280px auto 80px; */
+
+            /* To divide cloumns in terms of FRACTIONS fr is used  */
+            /* grid-template-columns: 1fr 4fr 1fr; */
+
+            /* to get many columns we can use repeat function  */
+            grid-template-columns: repeat(3,auto);
+            grid-template-columns: repeat(10,auto);
+
+            /* gap between grid can be given by this  */
+            grid-gap: 2rem;
+        }
+
+        .item{
+            /* height: 80px; */
+            /* width: 80px; */
+            background-color: coral;
+            /* margin: 3px; */
+            padding: 20px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-10</div>
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-10</div>
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z code</title>
+
+    <style>
+
+        /* NOTEEEEEE z position works only for position relative absolute sticky or fixed */
+        /* it does not work for static  or default position */
+
+        /* For a positioned box, the 'z-index' property specifies the stack level of the box in the current stacking context and whether the box establishes a local stacking context. */
+
+        /* element having higher z index comes on element having lower z index value  */
+        /* used in social media templtes in chat box to stack elements one on other etc.. */
+        .box{
+            width: 120px;
+            height: 120px;
+            border: 5px solid black;
+        }
+
+        #box1{
+            position: relative;
+            top: 49px;
+            z-index: 10;
+            background-color: pink;}
+        #box2{
+            /* display: none; *//*This hides element and its space*/
+            /* visibility: hidden;This only hides element but d=shows its empty space */
+            position: relative;
+            top:34px;
+            z-index: -1;
+            background-color: yellow;}
+        #box3{background-color: green;}
+        #box4{background-color: red;}
+    </style>
+</head>
+<body>
+    <!-- div.box#box$*4 to create 4 div each of class box and id box1 box2 box3 box4 -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

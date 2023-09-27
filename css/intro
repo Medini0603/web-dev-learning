@@ -1,0 +1,33 @@
+css-->cascading style sheeets
+css gives style to raw html
+makes websites responsive i.e suitable for laptop phone etc..
+html structure,,,,,css design
+css-->modern looking and beautiful
+
+syntax
+p       { color:    blue;}
+selector  property  value
+where     this      set this value
+
+here p means paragraphs
+set all paragraphs colour to blue
+if only one paragraph should be coloured then id should be given
+we can also select using id, class, nested tags
+.class
+#id
+
+eg2
+header , p.intro   {
+        |             background_color :red;
+        |            border_radius:3px
+        |            }
+group of selectors   declaration block
+
+
+3 ways to add css to markup(html)
+1.inline css : add css directly to elements using style attribute
+     eg: <p style=""></p>
+2.internal css : css is kept inside the head tags in <style> tags
+        in single file css and markup are kept seperately
+3.external css: css is kept seperately in .css style sheet
+                and inclue that .css to markup

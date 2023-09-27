@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+
+    <style>
+        body{
+            font-size: 30px;
+        }
+        h1{
+            font-size: 35px;
+            background-color: tomato;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            /* margin: auto; */
+
+            /* or  */
+
+            display:inline-block;
+            width: 500px;
+            margin: auto 500px;
+        }
+
+/* UNCOMMENT THE FOLLOWING ONE BY ONE AND SEE THE CHANGES */
+
+/* all para inside any div will get this property  */
+        /* div p{
+            background-color: cyan;
+        } */
+
+/*all para inside li of div will get this*/
+      /* div li p{
+        background-color: pink;
+      } */
+
+/* This property applies only to DIRECT child of div not any other */
+      /* div >p{
+        background-color: magenta;
+      } */
+
+/*if div is the previous sibling of p then p gets these prop*/
+/*eg div and p inside bbody and div comes before p*/
+/*i.e p is the next sibling of d*/
+      /* div + p{
+        background-color: lightblue;
+        color: black;
+      } */
+
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <p>This is a paragraph inside ul</p>
+                <li>
+                    <p>This is paragraph inside list of div</p>
+                </li>
+
+                <li>
+                    This will not get affected as its not inside paragraph
+                </li>
+            </ul>
+            <p>This is the inner most paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+   
+    <p> This is paragraph outside div</p>
+</body>
+</html>

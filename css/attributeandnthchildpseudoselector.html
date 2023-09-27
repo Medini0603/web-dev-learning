@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudoselector</title>
+</head>
+
+<style>
+    input {
+        display: block;
+    }
+
+    .container {
+        margin: 33px 23px;
+        /* display: block; */
+        /* not needed becoz container is a div which is already a block  */
+        width: 233px;
+        margin: auto;
+    }
+
+    /* pseudoselector to select only input of type text  */
+    input[type='text'] {
+        padding: 45px;
+        border: 3px solid red;
+    }
+
+    /*pseudoselector to select only ancho text for which target is defined*/
+    /* Now here it work for both google and facebook but not u tube  */
+    a[target] {
+        font-size: 35px;
+        color: palevioletred;
+    }
+
+    /* pseudoselector to select only target of type self */
+    a[target='_self'] {
+        color: lightblue;
+    }
+
+    input[type='email'] {
+        border: 2px solid purple;
+        color: yellow;
+    }
+
+
+    /*pseudoselector to select nth child of given type*/
+    /* this will apply css for 3rd child of li  */
+    li:nth-child(3) {
+        color: purple;
+        font-size: 22px;
+    }
+
+    /*Now to apply property for every alternate child we use this pseudoselector*/
+    li:nth-child(2n+0) {
+        color: red;
+    }
+
+    li:nth-child(3n+1) {
+        font-size: 33px;
+    }
+
+    /*odd and even children*/
+
+    li:nth-child(odd) {
+        background-color: yellow;
+    }
+
+    li:nth-child(even) {
+        background-color: cyan;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <!-- target=_balnk to open in a new tab  -->
+        <h2><a href="http://google.com" target="_blank"> Go to google</a></h2>
+        <h2><a href="http://youtube.com"> Go to youtube</a></h2>
+        <h2><a href="http://facebook.com" target="_self"> Go to facebook</a></h2>
+
+        <!-- to make it come one by one we use div for each input  -->
+
+        <!-- <form action="" class="formcontrol">
+            <div><input type="text" placeholder="Enter your name"></div>
+           <div> <input type="text" placeholder="Enter your password"></div>
+           <div> <input type="submit" ></div>
+        </form> -->
+
+        <!-- or -->
+
+        <!-- just type simply and make input display = block in css  -->
+        <form action="" class="formcontrol">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="email" placeholder="Enter your email">
+            <input type="submit">
+        </form>
+
+
+        <ul>
+            <li class="item1">Item 1</li>
+            <li class="item2">Item 2</li>
+            <li class="item3">Item 3</li>
+            <li class="item4">Item 4</li>
+            <li class="item5">Item 5</li>
+            <li class="item6">Item 6</li>
+            <li class="item7">Item 7</li>
+            <li class="item8">Item 8</li>
+            <li class="item9">Item 9</li>
+            <li class="item10">Item 10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

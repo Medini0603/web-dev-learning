@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <!-- adding external fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <style>
+        
+
+        .container {
+            width: 900px;
+            border: 5px solid #7a3a7a;
+            /* now to allign it to center on x axis we use margin auto  */
+            /* for y axis we need to give as px there is not auto for y  */
+            margin: 33px auto;
+
+            /* adding fonts  */
+            font-family: 'Odibee Sans', cursive;
+            font-family: 'Ubuntu Mono', monospace;
+        }
+
+        .item {
+            border: 3px solid black;
+            background-color: rgb(218, 198, 198);
+            margin: 15px 15px;
+            padding: 30px 30px;
+        }
+
+        .para {
+            background-color: #d1bfd3;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="fruit">
+            <h3>Fruit</h3>
+            <p id="fruitpara" class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quae deleniti sint inventore vel quia
+                numquam dignissimos, rerum sapiente vitae, deserunt nisi libero, obcaecati sequi et. Temporibus
+                voluptatum nesciunt expedita?
+            </p>
+        </div>
+
+        <div class="item" id="stationary">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quae deleniti sint inventore vel quia
+                numquam dignissimos, rerum sapiente vitae, deserunt nisi libero, obcaecati sequi et. Temporibus
+                voluptatum nesciunt expedita?
+            </p>
+        </div>
+
+        <div class="item" id="computer">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quae deleniti sint inventore vel quia
+                numquam dignissimos, rerum sapiente vitae, deserunt nisi libero, obcaecati sequi et. Temporibus
+                voluptatum nesciunt expedita?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

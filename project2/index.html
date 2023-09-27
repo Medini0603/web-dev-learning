@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- NOTE all images are brought from PIXABAY.COM   -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Eating</title>
+    <link rel="stylesheet" href="css/style.css">
+<!-- To make website reamin intact first we check until where it ramains intact by doing INSPECT ELEMENT
+CHOOSE RESPONSIVE  and DECREASE WIDTH 
+now in our case it starts getting spoilt at 1000 px 
+so we give that limit -->
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/phone.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- creating navigation bar with logo and basic options like about contact  -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo2.png" alt="Happy Eating">
+        </div>
+
+        <ul>
+            <!-- href=#id name to reach that place in website  -->
+            <li class="item"><a href="#home">Home</a> </li>
+            <li class="item"><a href="#servicescontainer">Services</a> </li>
+            <li class="item"><a href="#client-section">Our Clients</a> </li>
+            <li class="item"><a href="#contactbox">Contact Us</a> </li>
+        </ul>
+    </nav>
+
+    <!-- Now lets create a Home section  -->
+    <section id="home">
+        <h1 class="hprimary">Welcome to Happy meal</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde debitis fugiat modi sit consequatur facere atque nam delectus beatae ipsa?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+
+        <button class="btn">Order Now</button>
+    </section>
+
+
+    <!-- Now lwts create a services section  -->
+    <section id="servicescontainer">
+        <h1 class="hprimary center">Our Services </h1>
+
+        <div id="services">
+            <div class="box">
+                <img src="pizza.jpg" alt="Our services">
+                <h2 class="hsecondary center">Food Ordering  </h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur magni corporis veritatis sequi ratione quae dicta, nemo, hic minus consequatur, repellat pariatur! Odit nihil numquam, enim quaerat fugiat repellat non unde impedit omnis dignissimos?
+                </p>
+            </div>
+            <div class="box">
+                <img src="roti.jpg" alt="Our services">
+                <h2 class="hsecondary center">Food Catering  </h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur magni corporis veritatis sequi ratione quae dicta, nemo, hic minus consequatur, repellat pariatur! Odit nihil numquam, enim quaerat fugiat repellat non unde impedit omnis dignissimos?
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="bulk.png" alt="Our services">
+                <h2 class="hsecondary center">Bulk Ordering  </h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur magni corporis veritatis sequi ratione quae dicta, nemo, hic minus consequatur, repellat pariatur! Odit nihil numquam, enim quaerat fugiat repellat non unde impedit omnis dignissimos?
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="client-section">
+        <h1 class="hprimary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="client1.png" alt="Clients">
+            </div>
+            <div class="client-item">
+                <img src="client2.png" alt="Clients">
+            </div>
+            <div class="client-item">
+                <img src="client3.png" alt="Clients">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="hprimary center"> Contact us</h1>
+        <div id="contactbox">
+            <form action="">
+                <div class="formgroup">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="formgroup">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="formgroup">
+                    <label for="phone">Phone number</label>
+                    <input type="phone" name="phone" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="formgroup">
+                    <label for="meaasge">Message</label>
+                    <textarea name="message" id="message" rows="10" cols="30" placeholder="Enter your feedback or suggestions"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.MyHappyMeal.com. All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation menu</title>
+    <style>
+        .Nav {
+            background-color: black;
+            border-radius: 14px;
+        }
+
+        .Nav ul {
+            overflow: auto;
+            /*after float color is hidden to make it visible we use auto*/
+        }
+
+        .Nav li {
+            list-style: none;
+            /* to remove bullets */
+            float: left;
+            color: white;
+            border: black;/* no use*/
+            border-radius: 3px;/* no use*/
+            margin: 13px 20px;
+        }
+
+        .Nav a {
+            color: white;
+            padding: 3px 13px;
+            text-decoration: none;
+        }
+
+        .Nav a:hover{
+            background-color: gray;
+            color:rgb(57, 60, 61);
+        }
+        .search {
+
+            /* for the line "This is Search box" */
+            float: right;
+            color: white;
+            padding :11px 17px;
+        }
+
+        .search input{
+            border-radius: 14px;
+            border: 2px solid black;
+            padding: 3px 17px;
+            width:130px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="Nav">
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+            <div class="search">
+            <!--This is Search box -->
+                <input type="text" name="search" id="search" placeholder="Search this website">
+                <!-- placeholder is for to write somrthing inside the input box -->
+            </div>
+        </ul>
+    </header>
+</body>
+
+</html>

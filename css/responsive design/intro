@@ -1,0 +1,8 @@
+responsive design is a way to make a website responsive to adapt to various gadgets desktop pc..
+it is a necessity not a luxury
+
+four ways to acheive
+1. setting up viewport
+2. use max-width  and  max-height
+3.using css media queries
+4.using rem  vh  vw units over pixel -------> size units

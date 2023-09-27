@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        /* now container has become flex all item1 item2...item6 have become flax items and we can use flex properties on them */
+        /* all its children take parent's height 
+        and take width according to their sentence length
+        we can overwrite them in respective children */
+        .container{
+            padding :10px;
+            height: 544px;
+            width: 100%;
+            border: 5px solid black;
+            /* flex properties for flex container  */
+
+            /* to initialize a container as flex bo we use  */
+            display: flex;
+          /* flex-direction: column; */
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border: 2px solid red;
+            margin: 10px;
+            padding: 3px;
+        }
+
+         /* flex properties for flex container  */
+
+         #item1{
+            /* higher the order , later it shows up in the flex container  */
+            order: 40;
+
+            /* it grows bigger in size than others by that order given (here 2) when container is made to grow big  */
+            /* only positive numbers are allowed  */
+            /* flex-grow: 2; */
+         }
+
+         #item2{
+            order: 1;
+            /* flex-grow: 3; */
+         }
+
+         #item3{
+             /* it shrinks more in size than others by that order given (here 2) when container is made to grow small  */
+             /* opposite of grow  */
+            /* flex-shrink: 2; */
+         }
+
+         #item4{
+            /* to change default size of flex item we use flex-basis:  ; */
+            flex-basis: 340px;
+            /* when flex-direction: ;is set to row,,flex-basis: ; will control width  */
+              /* when flex-direction: ;is set to row,,flex-basis: ; will control width  */
+            
+
+              /* short hand for flex  */
+              flex: 2 2 100px;
+
+         }
+
+         #item5{
+
+            /* to allign flex-items w.r.t flex-container */
+            align-self: flex-end;
+            align-self: flex-start;
+            align-self: center;
+         }
+
+    </style>
+</head>
+<body>
+    <h1>This is flexbox tutorial</h1>
+    <div class="container">
+        <!-- div.item#item$*6  -->
+
+        <!-- note div is a block element it occupies entire space 
+        we can make it inline by using display:inline then two or more can come in same line
+        display:inline-block is also there-->
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+        <div class="item" id="item4">fourth box</div>
+        <div class="item" id="item5">fifth box</div>
+    </div>
+</body>
+</html>

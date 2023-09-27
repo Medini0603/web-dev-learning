@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in css and custom properties</title>
+
+    <style>
+
+        /* Now to make a global variable then we use :root  */
+        :root{
+            --box_color:rgb(60, 216, 60);
+            --maxwid:500px;
+        }
+        .box{
+            /* Variables in html are declared using 
+            --varname:value
+            used as var(--varname) */
+
+            --boxcolor:violet;
+            background-color: var(--boxcolor);
+            box-shadow:12px 30px 30px var(--box_color);
+           width: 200px;
+            height: 200px;
+            /* padding: 20px; */
+            border: 3px solid black;
+            margin: 9px 19px;
+        }
+
+        .container{
+            /* now --boxcolor is declared in box 
+            so it is like a local variable so it cant be used here 
+            even if used then no effect
+            example */
+            /* background-color: var(--boxcolor); */
+
+            /*Global variable shows effect*/
+            background-color: var(--box_color);
+            width: var(--maxwid);
+            margin: auto;/*to bring small container to center*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+        </div>
+    </div>
+</body>
+</html>

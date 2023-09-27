@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+
+        .grid{
+            display: grid;
+
+            /* 3 rows 1st and 2nd of 1 fr and 3rd one 4 times of other 2  */
+            grid-template-rows: 1fr 1fr 4fr;
+
+            /*Now to set size of others ec=xcept 1,2,3 item we use */
+            /* i.e others are 2 times of 1 and 2 */
+            grid-auto-rows: 2fr; 
+            grid-template-columns: 1fr 4fr 2fr;
+            grid-template-columns: repeat(3,4fr);
+            grid-gap: 1rem;
+
+        }
+        .item{
+            background-color: aqua;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">This is box-1</div>
+        <div class="item">This is box-2</div>
+        <div class="item">This is box-3</div>
+        <div class="item">This is box-4</div>
+        <div class="item">This is box-5</div>
+        <div class="item">This is box-6</div>
+        <div class="item">This is box-7</div>
+        <div class="item">This is box-8</div>
+        <div class="item">This is box-9</div>
+        <div class="item">This is box-10</div>
+    </div>
+</body>
+</html>

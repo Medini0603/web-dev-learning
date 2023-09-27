@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        .box{
+            background-color: palevioletred;
+            color: white;
+            font-size: 50px;
+            text-align: center;
+
+            display: none;/*all texts and display disappear from the screen*/
+        }
+/* only screen and is used to tell that we only support screen type of media not others  */
+        @media only screen and (max-width:300px) {
+            #box1{
+                /* i.e if width is between 0 too 300 then make content of box1 appear on scrren by making it block from none */
+                display: block;
+                background-color: yellow;
+                color: black;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            #box2{
+                /* i.e if width is between 300 to 500 then make content of box2 appear on scrren by making it block from none */
+                display: block;
+                background-color: cyan;
+                
+            }
+        }
+
+        @media only screen and (min-width:500px) and (max-width:900px) {
+            #box3{
+               
+                display: block;
+                background-color: tomato;
+                color: black;
+            }
+        }
+
+        @media only screen and (min-width:900px)  {
+            #box4{
+             
+                display: block;
+                background-color: burlywood;
+               
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Main ek iphone hoon</div>
+    <div class="box" id="box2">mai ek tablet hoon</div>
+    <div class="box" id="box3">main ek computer hoon</div>
+    <div class="box" id="box4">main ek widesreen computer hoon</div>
+</body>
+</html>

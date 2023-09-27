@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        /* now container has become flex all item1 item2...item6 have become flax items and we can use flex properties on them */
+        /* all its children take parent's height 
+        and take width according to their sentence length
+        we can overwrite them in respective children */
+        .container{
+            padding :10px;
+            height: 544px;
+            width: 100%;
+            border: 5px solid black;
+            /* flex properties for flex container  */
+
+            /* to initialize a container as flex bo we use  */
+            display: flex;
+            /* flex-direction: ;  */
+            flex-direction: row;  /*default*/ /*items are added in horizontal from Left to Right*/
+          /*  flex-direction: column;/*vertical from top to down*/
+          /*  flex-direction: row-reverse;/*hori fro R to L*/
+         /*   flex-direction: column-reverse; vertical from D to U*/
+
+            /*to wrap the flex items inside container for any screen*/
+            /* used in displaying photos in gallery in phone tab computer */
+            /* useful in responsive design */
+            flex-wrap: wrap;/*default value is nowrap*/
+            /* flex-wrap: wrap-reverse; */
+
+            /* short hand for above two is flex-flow: ; */
+            flex-flow: row-reverse wrap;
+
+            /* justify  to bring the content to the center horizontally*/
+            justify-content: center;
+            /* to give space between two items of flexbox */
+            justify-content: space-between;
+            /* even space between each box including the borders  */
+            justify-content: space-evenly;
+            /* like margin around each box so more space between boxes and less space at end */
+            justify-content: space-around;
+
+            /*align  to make items center vertically */
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch;
+
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 2px solid red;
+            margin: 10px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is flexbox tutorial</h1>
+    <div class="container">
+        <!-- div.item#item$*6  -->
+
+        <!-- note div is a block element it occupies entire space 
+        we can make it inline by using display:inline then two or more can come in same line
+        display:inline-block is also there-->
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+        <div class="item" id="item4">fourth box</div>
+        <div class="item" id="item5">fifth box</div>
+        <div class="item" id="item6">sixth box</div>
+    </div>
+</body>
+</html>

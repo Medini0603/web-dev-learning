@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Fitness</title>
+
+    <style>
+        /* CSS reset  */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('image/bg5.jpg');
+            /* height:2000px; */
+        }
+
+        .left{
+            display: inline-block;
+            position: absolute;
+            left :22px;
+            top: 20px;
+            border:2px solid block;
+        }
+        .left img{
+            width: 150px;
+
+        }
+        .left div{
+            text-align: center;
+        }
+        .right{
+            position: absolute;
+            right :22px;
+            top: 20px;
+            border:2px solid green;
+        }
+
+        .mid{
+            display: block;
+            width: 33%;
+            margin:20px auto;
+            border:2px solid black;
+        }
+
+        .navbar li{
+            color:white;
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar a{
+            color: rgba(4, 11, 46, 0.874);
+            text-decoration: none;
+            padding :34px 23px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar a:hover{
+            color: grey;
+            text-decoration: underline;
+            padding :34px 23px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left logo
+        mid nav bar
+        right button -->
+        <div class="left">
+            <img src="image/gym.png" alt="">
+            <div>Yoga Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Yoga benefits</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+i am right
+        </div>
+    </header>
+</body>
+
+</html>

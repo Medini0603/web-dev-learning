@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ids and classes</title>
+</head>
+
+<body>
+    <h3>ids and classes</h3>
+    <!-- id is the identifier it is the name given to that element to identify
+    no two tags can have same name
+    eg:we have given id="mainBox" in <div></div>
+    now we cant give id="mainBox" in some other <div></div> or some other <h3></h3> -->
+    <div id="mainBox" class="redBg">
+        this is main box
+    </div>
+    <!-- id is used to uniquely identify the element in javascript, css -->
+    <!-- we can do changes in the element using javascript,css by grabbing the id of that element -->
+
+
+    <!-- class:-
+    it is used when we want to style or give same properties to say 100 elements in the website -->
+    <!-- eg:- here class ="redBg"   i define styles like red background black text while border 2px thick border so on in a single class called redBg  -->
+    <!-- so whichver element is given with class redBg it acquires those properties defined in redBg  -->
+
+
+    <!-- note:
+    one element can have only one id and an id can corespond to only one element
+   but one element can have multiple calsses and onr class may be given to muliple elements
+    eg:
+    <div id="mainBox" class="redBg blackPadding yellowBorder" ></div>
+     <span id="Anotherbox" class="redBg  yellowBorder" ></span>
+    multiple classes are given with spaces in between
+    this element has one id i.e mainBox and 3 classes redBg blackPadding yellowBorder and acquires all features defines in all 3 classes
+    also redBg and yellowBoder is given to other element with unique id
+     -->
+
+
+
+    <!-- some shortcuts using Emmet
+     . for class and # for id -->
+    <!-- span.redBg  --> <span class="redBg"></span>
+    <!-- span#SpanId.redBg  --> <span id="SpanId" class="redBg"></span>
+    <!-- span.redBg.blackBorder.yellowBackground  -->
+    <span class="redBg blackBorder yellowBackground"></span>
+    <!-- emmet takes div as defalult -->
+    <!-- .redBg  -->
+    <div class="redBg"></div>
+    <!-- span.redBg.blackBorder.yellowBackground*4  -->
+    <!-- to create 4 same span  -->
+    <span class="redBg blackBorder yellowBackgrouunf">1st span:-)</span> 
+    <span class="redBg blackBorder yellowBackgrouunf">2nd span:-)</span>
+    <span class="redBg blackBorder yellowBackgrouunf">3rd span:-)</span>
+    <span class="redBg blackBorder yellowBackgrouunf">4th span:-)</span>
+</body>
+
+</html>

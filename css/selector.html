@@ -1,0 +1,72 @@
+<!-- selectors are used to find the element whose property is to be set
+selectors target single or multiple html elements
+
+4 selectors
+1.element
+2.id
+3.class
+4.grouping  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* element selector  */ /*comment in css is like/**/
+        /* note to add border we need to write solid and then color name */
+        p{
+            border: 2px solid magenta;
+        }
+        p {
+            color: red;
+        }
+
+        /* id selector  */
+        #blueelement{
+            color:blue;
+        }
+
+        /* class selector  */
+        .magentaelem{
+            color: magenta;
+        }
+
+        .redelement{
+            color:red;
+            /* does not become red becoz redelement is an id and here dot represents its a class so no changes */
+        }
+        .bggreen{
+            background-color: yellow;
+        }
+
+        .firstcls{
+            color:aqua;
+            background-color:papayawhip;
+        }
+
+        /* group selector */   
+        footer,span{
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+<!-- NOTE when to use id selector? when we want to color or change one particular specific element only  -->
+<!-- class selector? when multiple elements shld be given eith same property -->
+<body>
+    <h3>Css selectors</h3>
+    <p id="Firstpara" class="firstcls">This is a simple paragraph to demonstrate selectors</p>
+    <p id="blueelement">This is another simple paragraph to demonstrate selectors</p>
+    <p id="redelement" class="magentaelem bggreen">This is another simple paragraph to demonstrate selectors</p>
+    <div>
+        <p>This is yet another simple paragraph to demonstrate selectors</p> 
+        <!-- this is also  red because all para are made red by internal css  -->
+    </div>
+    <span>This is a span</span>
+    <footer>This is footer</footer>
+</body>
+
+</html>

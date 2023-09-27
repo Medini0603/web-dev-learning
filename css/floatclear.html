@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float clear</title>
+    <!-- adding external fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 900px;
+            border: 5px solid #7a3a7a;
+            /* now to allign it to center on x axis we use margin auto  */
+            /* for y axis we need to give as px there is not auto for y  */
+            margin: 33px auto;
+
+            /* adding fonts  */
+            font-family: 'Odibee Sans', cursive;
+            font-family: 'Ubuntu Mono', monospace;
+
+            background-color: #c4b2c4;
+        }
+
+        .item {
+            border: 3px solid black;
+            background-color: rgb(218, 198, 198);
+            margin: 15px 15px;
+            padding: 30px 30px;
+        }
+
+        .para {
+            background-color: #d1bfd3;
+            /* text-align: center; */
+            /* text-align: left; */
+            text-align: justify;
+            /* text-align: right; */
+        }
+
+        #fruit {
+            float: left;
+            /* width:12%; */
+            width: 48%;
+        }
+
+        #stationary {
+            float: right;
+            /* width: 48%; */
+            width: 40%;
+        }
+
+        #computer {
+            /* float :left; */
+            /* width: 50%; */
+
+            /* now it overlaps on it
+            to clear left side overlap use clear: left;
+            to clear right side overlap use clear: right; */
+            /* to clear both side overlap use clear: both; */
+            width: 90%;
+            /* clear: right;  fruit overalps */
+            /* clear: left;   stationary overlaps*/
+            clear: both;
+        }
+
+        h1 {
+            margin: 33px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>Welcome To My Store</h1>
+        <div class="item" id="fruit">
+            <h3>Fruit</h3>
+            <p id="fruitpara" class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quae deleniti sint inventore vel quia
+                numquam dignissimos, rerum sapiente vitae, deserunt nisi libero, obcaecati sequi et. Temporibus
+                voluptatum nesciunt expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt
+                impedit nam necessitatibus ullam officiis modi minus labore eius reprehenderit, vitae maxime laudantium
+                sit fugiat laborum, optio deleniti sapiente reiciendis assumenda enim similique dolorem.
+            </p>
+        </div>
+
+        <div class="item" id="stationary">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quae deleniti sint inventore vel quia
+                numquam dignissimos, rerum sapiente vitae, deserunt nisi libero, obcaecati sequi et. Temporibus
+                voluptatum nesciunt expedita?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus totam, ducimus reiciendis quasi autem
+                deserunt! Quasi ipsum exercitationem culpa sapiente, repudiandae cum? Obcaecati ratione repellat
+                molestias ducimus commodi rem incidunt voluptate, placeat quasi veniam!
+            </p>
+        </div>
+
+        <div class="item" id="computer">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quae deleniti sint inventore vel quia
+                numquam dignissimos, rerum sapiente vitae, deserunt nisi libero, obcaecati sequi et. Temporibus
+                voluptatum nesciunt expedita?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

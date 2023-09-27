@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow And Text Shadow</title>
+
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 23px;
+            /* border: 2px solid red; */
+            margin: 23px 30px;
+            background-color: burlywood;
+
+            /* syntax  */
+            /* box-shadow: offset-x   offset-y   blur-rdius   spread-radius   color; */
+
+            /* to give box shadow down we use positive numbers */
+            /* box-shadow: 12px 12px brown; */
+
+            /* to give box shadow up we use negative numbers */
+            /* box-shadow: -12px -12px brown; */
+
+            /*blur radius 3rd parameter in baox shadow is high then it spreads around the box*/
+            box-shadow: 12px 12px 12px brown;
+            /* box-shadow: 12px 12px 34px brown; */
+
+            /*spread radius 4th param */
+            /* box-shadow: 12px 12px 12px 12px brown; */
+            
+            /* now for color we can use rgba  */
+            /* a means alpha which decides darkness of color in our shadow */
+            /* box-shadow: 12px 12px 12px  rgba(210, 65, 8, 0.5); */
+
+            /* inset is used to make border go inside the item  */
+             /* box-shadow: inset 12px 12px brown; */
+             /* box-shadow: inset 122px 12px brown;*/
+             /*just check it */
+
+             /* for multiple box shadows use diff params seperated by commas  */
+             /* box-shadow:  122px 12px brown,12px 34px rgb(205, 15, 15); */
+
+            }
+            /* text shadow  */
+            .card h1{
+                text-shadow: 12px 12px 5px white;
+                text-shadow: -12px -12px 5px white;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h1>This is c course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro optio expedita odit, aliquid suscipit a
+                illo et ipsam nobis facilis, error praesentium eius magni labore similique non ratione quidem excepturi
+                modi, quaerat ad autem. Nesciunt nostrum temporibus fugit nam optio eveniet corrupti, tempore aperiam
+                accusamus.</p>
+        </div>
+        <div class="card" id="card2">
+            <h1> This is html course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro optio expedita odit, aliquid suscipit a
+                illo et ipsam nobis facilis, error praesentium eius magni labore similique non ratione quidem excepturi
+                modi, quaerat ad autem. Nesciunt nostrum temporibus fugit nam optio eveniet corrupti, tempore aperiam
+                accusamus.</p>
+        </div>
+        <div class="card" id="card3">
+            <h1>Card 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro optio expedita odit, aliquid suscipit a
+                illo et ipsam nobis facilis, error praesentium eius magni labore similique non ratione quidem excepturi
+                modi, quaerat ad autem. Nesciunt nostrum temporibus fugit nam optio eveniet corrupti, tempore aperiam
+                accusamus.</p>
+        </div>
+    </div>
+</body>
+
+</html>

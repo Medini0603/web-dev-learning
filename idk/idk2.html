@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <title>Resume</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body
+        {
+            background-color:rgb(253,254,255);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+       
+        .full{
+           
+            max-width:1000px;
+            min-height:100px;
+           
+            margin:0px;
+            display:grid;
+           
+            grid-template-columns:1fr 2fr;
+        }
+       
+        .left{
+           
+            background-color:#E8A0BF;
+           
+            padding:20px;
+        }
+       
+        .right{
+           
+            background-color:#BA90C6;
+            padding:20px;
+        }
+       
+        .image,.contact,.skills,.language,.hobbies,.title,.summary,.experience,.education,.project{
+            margin-bottom:30px;
+            padding: auto;
+        }
+        .h2{
+            background-color:rgb(4,96,150);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="full">
+        <div class="left">
+            <div class="image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUeKpeAZbdGKC-C385OYRHXBE2HqMfi89-9Q&usqp=CAU" alt="gfg.logo" style="width:100px;height=100px;">
+          </div>
+      <div class="contact">
+          <h2>Contact</h2>
+          <p><b>Email id:</b>medu0603@gmail.com</p>
+          <p><b>Mobile number</b>8073985021</p>
+      </div>
+     
+      <div class="skills">
+          <h2>Skills</h2>
+          <ul>
+          <li><b>Programming language : Python, Java, C</b></li>
+          <li><b>Frontend : HTML5, CSS, Javascript</b></li>
+          <li><b>Backend : NodeJS </b></li>
+          </ul>
+      </div>
+      <div class="hobbies">
+          <h2>Hobbies</h2>
+          <ul>
+          <li>Singing</li>
+          <li>Yoga</li>
+          <li>Sleeping</li>
+          </ul>
+      </div>
+      <div class="education"></div>
+      <h2>Education</h2>
+      <table border="1">
+      <tr><th>Organisation</th>
+      <th>Passing year</th>
+      <th>Percentage</th>
+      </tr>
+      <tr><td>United Academy</td>
+      <td>2018</td>
+      <td>99 %</td>
+      </tr>
+      <tr><td>Brigade PU College</td>
+      <td>2020</td>
+      <td>98 %</td>
+      </tr>
+      </table>
+      </div>
+
+      <div class="right">
+          <div class ="name">
+          <h1>MEDINI</h1>
+          </div>
+          <div class="title"><p>Cloud Engineer</p></div>
+         
+          <div class="summary">
+      <h2>Summary</h2>
+      <p>To secure a challenging position in a reputed organisation,to expand existing knowledge with new skills.</p>
+      </div>
+      <div class="experience">
+      <h2>Experience</h2>
+      <h3>ABC webdev pvt lmt</h3>
+      <p>January 2022 to present</p>   
+         
+      <ul>
+      <li>Actively engaged in web creative design and development</li>
+      <li>Designing project and planning</li>
+      </ul>
+     
+      <h3>XYZ webdev pvt lmt</h3>
+      <p>January 2021 to 2022</p>   
+         
+      <ul>
+      <li>Actively engaged in web creative design and development</li>
+      <li>Designing project and planning</li>
+      </ul>
+      </div>
+         
+      <div class="project">
+      <h2>PROJECTS</h2>
+     
+     
+         
+      <ul>
+     
+      <li><h3>Project - 1</h3></li>
+      <p>Online Grocery Store : A web development project using HTML, CSS, Javascript<p>
+      <li><h3>Project - 2</h3></li>
+      <p>Personality Prediction : A Machine Learning Project using Kmeans<p>
+      <li><h3>Project - 3</h3></li>
+      <p>MultiDisease Diagnosis: A Machine Learning Project using KNN and logistic regression<p>
+      </ul>
+     
+     
+     
+     
+      </div>
+      </div>
+  </body>
+</html>

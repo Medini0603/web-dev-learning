@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms and tags</title>
+</head>
+
+<body>
+    <h2>This html forms tutorial</h2>
+
+    <!-- using form 
+    in action we shld tell which backend is taking the data submitted for website
+    i.e submit this form to backend.php 
+    we can add input to forms
+    input can be of various types checkbox date text number etcc we specify it in type
+    input is a spanning inline element
+    div is a block element ----takes one width or span and next shld go to next lines-->
+    <form action="backend.php">
+        <!-- name refers to the value in backend.php that accepts the data entered in name or role or email box -->
+        <!-- label is used for to select the box when u press the name 
+       [label for name] and [id name] should be same -->
+        <div> <label for="name">Name: </label>
+            <input type="text" name="Myname" id="name">
+        </div>
+        <br>
+
+        <div> <label for="role">Role: </label>
+            <input type="text" name="Myrole" id="role">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="Myemail" id="email">
+        </div>
+        <br>
+        <div><label for="date">Date: </label>
+            <input type="date" name="Mydate" id="date">
+        </div>
+        <br>
+        <div> Bonus: <input type="number" name="Mybonus"></div>
+        <!--number box takes only e letter to take exponential-->
+        <br>
+        <div>Are you eligible: <input type="checkbox" name="Myeligibility"></div>
+        <br>
+        <!-- by default to use check use "checked" word after name  -->
+        <div>Are you happy: <input type="checkbox" name="Myhappiness" checked></div>
+        <br>
+        <div>Gender: Male <input type="radio" name="Mygender">
+            Female <input type="radio" name="Mygender">
+            Other <input type="radio" name="Mygender">
+            <!-- we can select any one among the three because all corresponds to same value "Mygender" in backend.php  -->
+        </div>
+        <br>
+        <div>Write about yourself <br> <textarea name="Mytext" id="" cols="90" rows="10"></textarea> </div>
+        <br>
+        <div>
+        <!-- select to select from droplist
+        option to set values of the selected drop list
+    if we want to make any one to be selecyed by default we use word "selected" after value-->
+            <label for="car">Car : </label>
+            <select name="Mycar" id="car">
+                <option value="ind" >Indica</option>
+                <option value="wag" selected>Wagonar</option>
+                <option value="sft" >Swift</option>
+            </select>
+        </div>
+        <br>
+        <!-- now to submit the form we should use input its type and value  -->
+        <input type="submit" value="Sumit now">
+        <br>
+        <br>
+        <!-- now to reset the form filled -->
+        <input type="reset" value="Reset now">
+        <br>
+
+    </form>
+</body>
+
+</html>

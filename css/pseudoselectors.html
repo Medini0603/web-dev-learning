@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        .container {
+            border: 3px solid #438145;
+            background-color: #8bc17b;
+            padding:50px;
+            margin: 50px;
+            width: 666px;
+            margin: 34px auto;
+        }
+
+        /* now we give styling to both link and button using class btn  */
+        .btn{
+            /* border:#438145; */
+            border: none;
+            background-color: rgb(87, 142, 87);
+            padding: 6px;
+            color:black;
+            /* to add cursor pointr on both  */
+            /* cursor:col-resize; */
+            cursor: pointer;
+
+            font-size: 13px;
+            border-radius: 4px;
+        }
+
+        /* lets add properties to link to remove its underline and other properties  */
+        a{
+            /* text-decoration: wave; */
+            text-decoration:none ;
+        }
+
+
+        /* pseudoselectors are hover acive visisted  */
+        a:hover{
+            color:#132114;
+            background-color: #3c813e;
+            
+        }
+
+        a:visited{
+            background-color: rgb(29, 141, 72);
+        }
+
+         a:active{
+            background-color: rgb(192, 54, 100);
+        } 
+
+        /* we can add pseudoselectors to class also */
+        .btn:hover{
+            color:#132114;
+            background-color: #3c813e;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt fuga ducimus assumenda cupiditate
+            sunt! Quae, quos mollitia? Doloribus, facilis quaerat similique nihil consectetur voluptatibus reiciendis
+            distinctio corrupti quo beatae, iusto fugiat delectus natus?</p>
+
+        <!-- now lets add link to it -->
+        <a href="https://www.amazon.com/" class="btn">Read more</a>
+        <!-- let us add an button to it -->
+        <button class="btn">Conatct us</button>
+    </div>
+</body>
+
+</html>

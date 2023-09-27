@@ -1,0 +1,51 @@
+JAVASCRIPT
+client side scripting language
+makes web pages alive
+used for calculation 
+used to send info to server
+ajex ---> asynchronous javascript and xml --->helps to change contents of screen dynamically without reloading
+DOM--->document object model----->it has html ,css ,body-nav div footer
+listen to events and respond 
+to insert elemnts dynamically
+to programatially perform actions in webpage
+CAlled as live script
+javascript-->younger brother of JAva
+
+
+BOth in browser and server(BACKEND)
+
+BACKEND NODEjs
+BACKEND options php,python,rubi,nodejs
+
+javascript-->safe design
+does not provide any low level CPU access
+only to access the browser
+
+uses of js in browser
+1.add new html and change existing HTML from DOM
+2.react to events-->response to server, key press, mouse movement
+3.Ajax requests
+4.Get and set cookies and use local storage
+
+things js cant do in browser
+1.read/write to and from Computer Hard disk
+2.Same origin policy-->to access data
+  one browser cant request and obtain data from another browser opened on same system
+        i.e cwh.com cant get data from fb.com
+        some times if we want ten we can do handshake between 2 browsers by using some headers
+
+What makes js unique
+1.has html and css support
+2.simple API and functions for simple functions
+3.supports major modern browser ---->enabled by default
+
+js versions
+1.maintained by community
+2.ECMA-->scripting language to add new things to js -->in 1997
+1st version-->1997
+2nd-->1998
+3rd  1999
+-
+-
+latest-->2015
+2016,17,18

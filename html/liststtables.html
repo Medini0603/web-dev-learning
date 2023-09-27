@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lists and tables</title>
+</head>
+
+<body>
+    <!-- lists in html unordered list ul  it has an attribute called type which customizes list as circle square sphere
+    ordered list ol   it has an attribute called type which customizes list as roman 1234 abcd i)ii)iii)
+    contents of list in li   -->
+
+    <ul>
+        <!--default is sphere-->
+        <li>first item of unorderd list</li>
+        <li>second item of unorderd list</li>
+        <li>third item of unorderd list</li>
+    </ul>
+
+    <ul type="circle">
+        <li>first item of unorderd list</li>
+        <li>second item of unorderd list</li>
+        <li>third item of unorderd list</li>
+    </ul>
+
+    <ol>
+        <!--default is numbers-->
+        <li>first item of ordered list</li>
+        <li>second item of ordered list</li>
+        <li>third item of ordered list</li>
+    </ol>
+
+    <ol type="a">
+        <li>first item of ordered list</li>
+        <li>second item of ordered list</li>
+        <li>third item of ordered list</li>
+    </ol>
+
+    <ol type="I">
+        <li>first item of ordered list</li>
+        <li>second item of ordered list</li>
+        <li>third item of ordered list</li>
+    </ol>
+
+    <!-- nested lists  -->
+    <ol type="I">
+        <li>first item of ordered list</li>
+        <li>second item of ordered list<br> its items are:-</li>
+
+        <ul type="square">
+            <li>second1</li>
+            <li>second2</li>
+            <li>second3</li>
+        </ul>
+        <li>third item of ordered list</li>
+    </ol>
+
+
+    <!-- tables  using    
+         table 
+        thead th to add columns
+        tbody tr to specify one row td to add data in that row  -->
+
+    <h3>html tables</h3>
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Employee id</th>
+            <th>Salary</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>medini</td>
+                <td>121</td>
+                <td>15 lakhs</td>
+            </tr>
+
+            <tr>
+                <td>nisha</td>
+                <td>35</td>
+                <td>10 lakhs</td>
+            </tr>
+
+            <tr>
+                <td>aishwarya ar</td>
+                <td>4</td>
+                <td>8 lakhs</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>

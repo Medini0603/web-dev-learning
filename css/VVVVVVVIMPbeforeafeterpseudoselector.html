@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudoselectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Hind+Siliguri:wght@500&family=Kanit&family=Odibee+Sans&family=Rubik&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        font-family: 'Gentium Book Plus', serif;
+        /* background: url('https://source.unsplash.com/random/nature') no-repeat center center/cover; */
+    }
+    
+    header::before{
+        background: url('https://source.unsplash.com/random/nature') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        /* there is gap at top and bottom  */
+        /* to make that go away we use  */
+        top: 0;
+        left: 0;
+/* This makes use of entire screen hides all other contents of page  */
+        /* so we use  */
+        z-index: -1;
+        opacity: 0.5;
+    }
+    h3 {
+        font-size: 4rem;
+    }
+
+    ul {
+        font-size: 20px;
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    li {
+        list-style: none;
+        padding: 20px 20px;
+        /* margin: 10px; */
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 3px 230px;
+        align-items: center;
+        /* border: 3px solid white; */
+
+        /*Now if i make this box too large*/
+        height: 500px;
+        justify-content: center;
+    }
+
+    /* pseudoselector before  */
+    /* section::before{
+        content: "This is content before section" ;
+    }
+
+    section::after{
+        content: "This is content after section" ;
+    } */
+
+    p {
+        text-align: center;
+        font-size: 25px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="item">Home</li>
+                <li class="item">About Us</li>
+                <li class="item">Services</li>
+                <li class="item">Conatct Us</li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <h3>Welcome to coding world..</h3>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas facilis ad quia impedit alias
+            molestias, soluta libero excepturi quas hic dolor unde at? Necessitatibus sequi deserunt voluptatum
+            voluptate aspernatur, repellat quisquam nostrum ex assumenda.
+        </p>
+    </section>
+    <!-- <hr> -->
+</body>
+
+</html>

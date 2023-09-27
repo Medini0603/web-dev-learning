@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS introduction</title>
+    <!-- internal css inside the head of markup -->
+    <!-- <link rel="stylesheet" href="intro.css"> -->
+    <style>
+        p{
+        color:black  !important;
+        background-color: aqua;
+    }
+    </style>
+</head>
+<body>
+    <h3 style="background-color: yellow;">This is css introduction</h3>
+    <!-- inline css  -->
+    <!-- not recommended as it becomes messy -->
+    <p style="color: red;">After this tutorial you will know everything about CSS/HTML</p>
+    <!-- NOTE that browser gives more importance to inline than internal so 1st line is red next comes in blue acc to internal css in header in <style></style> -->
+    <p>After this tutorial you will know everything about CSS/HTML</p>
+    <link rel="stylesheet" href="intro.css">
+    <p>After this tutorial you will know everything about CSS/HTML</p>
+
+    <!-- note inline highest precedence
+    among internal and external which is written last gets the highest precedence
+    becoz it overrides it
+    now to make it get more importance we use "!important" against that property 
+    that means it cannot be overidden-->
+</body>
+</html>
